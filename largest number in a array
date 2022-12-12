@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args){
+      int arr[] = {21,35,48,79,36,41}
+      int max = 0; int i = 0;
+      while(i<(arr.length-1)){
+       if (arr[i]<arr[++i])
+       max = arr[i]
+       else
+       i++;
+      }
+   }
+}
+      
