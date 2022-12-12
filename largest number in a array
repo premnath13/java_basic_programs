@@ -3,8 +3,10 @@ public class Main {
       int arr[] = {21,35,48,79,36,41};
       int max = 0; int i = 0;
       while(i<(arr.length-1)){
-       if (arr[i]<arr[++i])
-       max = arr[i];
+       if (arr[i]<arr[i+1]){
+       max = arr[i+1];
+       i++;
+       }
        else
        i++;
       }
