@@ -1,0 +1,22 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The Word To Check Palindrome:");
+        String ques = sc.nextLine();
+        String str = ques;
+        ques = ques.toLowerCase();
+        char arr[] = ques.toCharArray();
+        char ar[] = new char[ques.length()];
+        int j=0;
+        for (int i = ques.length()-1; i>=0;i--){
+            ar[j++] = arr[i];
+        } 
+        String ans = new String(ar);
+        int value = ans.compareTo(ques);
+        if (value==0)
+        System.out.println(str+" is a Palindrome");
+        else
+        System.out.println(str+" is not a Palindrome");
+    }
+}
