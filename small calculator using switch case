@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The Number 1:");
+        int n1 = sc.nextInt();
+        System.out.print("Enter Thr Number 2:");
+        int n2 = sc.nextInt();
+        System.out.print("Enter The Operation To Perform (+,-,*,/):);
+        char op = sc.next().charAt(0);
+        switch (op) {
+            case '+':
+                System.out.println(n1 + n2);
+                break;
+            case '-':
+                System.out.println((n1 - n2));
+                break;
+            case '*':
+                System.out.println(n1*n2);
+                break;
+            case '/':
+                System.out.println((float)n1/n2);
+                break;
+        }
+    }
+}
