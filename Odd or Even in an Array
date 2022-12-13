@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class odd_or_even {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter No Of Elements:");
+            int count = sc.nextInt();
+            int[] arr = new int[count];
+            for (int i = 0; i < count; i++) {
+                System.out.format("Enter the %dth Element:", i + 1);
+                arr[i] = sc.nextInt();
+            }
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i]%2==0)
+                    System.out.printf("%d Is A Even Number\n",arr[i]);
+                else
+                    System.out.printf("%d Is A Odd Number\n",arr[i]);
+            }
+        }
+}
