@@ -1,0 +1,24 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The Mark In One Subject (Out Of 100):");
+        int mark = sc.nextInt();
+        if (mark<40)
+            System.out.println("You Are Failed With - F Grade  (Failed)");
+        else if (mark>=40 && mark<50)
+            System.out.println("You Are Passed With - D Grade  (Below Average)");
+        else if (mark>=50 && mark<60)
+            System.out.println("You Are Passed With - C Grade  (Fair)");
+        else if (mark>=60 && mark<70)
+            System.out.println("You Are Passed With - B Grade  (Good)");
+        else if (mark>=70 && mark<80)
+            System.out.println("You Are Passed With - A Grade  (Very Good)");
+        else if (mark>=80 && mark<90)
+            System.out.println("You Are Passed With - E Grade  (Excellent)");
+        else if (mark>=90 && mark<=100)
+           System.out.println("You Are Passed With - 0 Grade  (Outstanding)");
+       else
+           System.out.println("Invalid Mark (Mark Above 100");
+    }
+}
